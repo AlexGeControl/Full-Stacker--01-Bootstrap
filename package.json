@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "bootstrap 4 development",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Bootstrap 4 Development\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGeControl/Full-Stacker--01-Bootstrap.git"
+  },
+  "keywords": [
+    "bootstrap4"
+  ],
+  "author": "Ge Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGeControl/Full-Stacker--01-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/AlexGeControl/Full-Stacker--01-Bootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
