@@ -1,4 +1,18 @@
 /*
+    pad body for navbar
+ */
+body {
+    padding: 50px 0px 0px 0px;
+}
+
+/*
+    theme color for navbar
+*/
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+/*
     header
  */
 .jumbotron {

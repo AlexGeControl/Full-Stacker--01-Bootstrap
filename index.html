@@ -16,7 +16,31 @@
     </head>
 
     <body>
-        
+        <!-- navbar class from Bootstrap for nav element in HTML -->
+        <!-- navbar-expand-sm
+                that means that for small and extra small screens,
+                this navbars will become a toggle-able navbar.
+        -->
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- Bootstrap class navbar-brand: this can be replaced with the logo for the website -->
+                <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                <!-- content of navbar -->
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul> 
+                </div>
+                <!-- navbar toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>           
+            </div>
+        </nav>
+
         <header class="jumbotron">
             <div class="container">
                 <div class="row row-header"> 
@@ -80,7 +104,7 @@
                         <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./aboutus.html">About</a></li>
                             <li><a href="#">Menu</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>

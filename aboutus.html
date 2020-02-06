@@ -16,6 +16,30 @@
     </head>
 
     <body>
+        <!-- navbar class from Bootstrap for nav element in HTML -->
+        <!-- navbar-expand-sm
+                that means that for small and extra small screens,
+                this navbars will become a toggle-able navbar.
+        -->
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <!-- Bootstrap class navbar-brand: this can be replaced with the logo for the website -->
+                <a class="navbar-brand" href="./index.html">Ristorante Con Fusion</a>
+                <!-- content of navbar -->
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul> 
+                </div>
+                <!-- navbar toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>           
+            </div>
+        </nav>
 
         <header class="jumbotron">
             <div class="container">
@@ -31,11 +55,16 @@
         </header>
 
         <div class="container">
-            <div>
-                <div class="row row-header">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="#">About</a></li>
+                </ol>
+
+                <div class="col-12">
                     <h3>About Us</h3>
+                    <hr>
                 </div>
-                <hr>
             </div>
 
             <div class="row row-content align-self-center">
@@ -82,7 +111,7 @@
                     <div class="col-4 offset-1 col-sm-2">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="./index.html">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Menu</a></li>
                             <li><a href="#">Contact</a></li>
