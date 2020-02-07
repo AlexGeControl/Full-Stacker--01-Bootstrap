@@ -20,7 +20,7 @@ Add the following contents at **the beginning of page head** to enable **media q
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/styles.css">
     </head>
 ```
 
