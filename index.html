@@ -70,7 +70,7 @@
 
         <header class="jumbotron">
             <div class="container">
-                <div class="row row-header"> 
+                <div class="row row-header align-items-center"> 
                     <!-- restaurant jumbotron logo -->
                     <div class="col-12 col-sm-6">
                         <h1>Ristorante con Fusion</h1>
@@ -79,7 +79,11 @@
                     
                     <!-- restaurant logo placeholder -->
                     <div class="col-12 col-sm">
-                        <img class="img-fluid" src="static/img/logo.png">
+                        <img class="img-fluid mx-auto d-block" src="static/img/logo.png">
+                    </div>
+
+                    <div class="col-12 col-sm">
+                        <a class="btn btn-warning btn-sm btn-block" role="button" href="#form-reserve-a-table">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -144,6 +148,88 @@
                                 Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. 
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                <div class="card" id="form-reserve-a-table">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <!-- number of guests -->
+                            <div class="form-group row">
+                                <div class="col-12 col-md-2">
+                                    <label class="form-label" for="num-of-guests">Number of Guests</label>
+                                </div>
+                                <div class="col-12 col-md-10">
+                                    <div class="row">
+                                        <!-- num. of guests: 1 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options1" name="options1" value="1">
+                                                <label class="form-check-label" for="options1">1</label>
+                                            </div>
+                                        </div>
+                                        <!-- num. of guests: 2 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options2" name="options2" value="2">
+                                                <label class="form-check-label" for="options2">2</label>
+                                            </div>                                            
+                                        </div>
+                                        <!-- num. of guests: 3 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options3" name="options3" value="3">
+                                                <label class="form-check-label" for="options3">3</label>
+                                            </div>
+                                        </div>
+                                        <!-- num. of guests: 4 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options4" name="options4" value="4">
+                                                <label class="form-check-label" for="options4">4</label>
+                                            </div>
+                                        </div>
+                                        <!-- num. of guests: 5 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options5" name="options5" value="5">
+                                                <label class="form-check-label" for="options5">5</label>
+                                            </div>
+                                        </div>
+                                        <!-- num. of guests: 6 -->
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" id="options6" name="options6" value="6">
+                                                <label class="form-check-label" for="options6">6</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- date and time -->
+                            <div class="form-group row">
+                                <div class="col-12 col-md-2">
+                                    <label class="form-labbel" for="time">Date and Time</label>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <input class="form-control" type="time" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <!-- confirm reservation -->
+                            <div class="form-group row">
+                                <div class="col-md-10 offset-md-2">
+                                    <button class="btn btn-primary" type="submit">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
