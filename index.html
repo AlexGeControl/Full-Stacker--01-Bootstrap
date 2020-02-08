@@ -28,7 +28,10 @@
         <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
             <div class="container">
                 <!-- Bootstrap class navbar-brand: this can be replaced with the logo for the website -->
-                <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="static/img/logo.png" height="30" width="41">
+                    Ristorante Con Fusion
+                </a>
                 <!-- content of navbar -->
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto">
@@ -76,6 +79,7 @@
                     
                     <!-- restaurant logo placeholder -->
                     <div class="col-12 col-sm">
+                        <img class="img-fluid" src="static/img/logo.png">
                     </div>
                 </div>
             </div>
@@ -87,23 +91,35 @@
                     <h3>Our Lipsmacking Culinary Creations</h3>
                 </div>
                 <div class="col-12 col-sm order-sm-first col-md">
-                    <h2>Uthappizza</h2>
-                    <p class="d-none d-sm-block">
-                        A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
-                    </p>
+                    <div class="media">
+                        <!-- media image -->
+                        <img class="d-flex mr-3 img-thumbnail align-self-center" src="static/img/uthappizza.png" alt="Uthappizza">
+                        <div class="media-body">
+                            <h2 class="mt-0">Uthappizza</h2>
+                            <!-- hide on extremely small mobile device -->
+                            <p class="d-none d-sm-block">
+                                A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
             <div class="row row-content align-items-center">
-                <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <div class="col-12 col-sm-4 order-sm-first col-md-3">
                     <h3>This Month's Promotions</h3>
                 </div>
-                <div class="col-12 col-sm order-sm-first col-md">
-                    <h2>Weekend Grand Buffet</h2>
-                    <p class="d-none d-sm-block">
-                        Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person 
-                    </p>
+                <div class="col-12 col-sm order-sm-last col-md">
+                    <div class="media">
+                        <div class="media-body">
+                            <h2 class="mt-0">Weekend Grand Buffet</h2>
+                            <p class="d-none d-sm-block">
+                                Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person 
+                            </p>
+                        </div>
+                        <img class="mr-3 img-thumbnail align-self-center" src="static/img/buffet.png" alt="Weekend Grand Buffet">
+                    </div>
                 </div>
             </div>
 
@@ -112,11 +128,16 @@
                     <h3>Meet our Culinary Specialists</h3>
                 </div>
                 <div class="col-12 col-sm order-sm-first col-md">
-                    <h2>Alberto Somayya</h2>
-                    <h4>Executive Chef</h4>
-                    <p class="d-none d-sm-block">
-                        Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. 
-                    </p>
+                    <div class="media">
+                        <img class="mr-3 img-thumbnail align-self-center" src="static/img/alberto.png" alt="Alberto Somayya">
+                        <div class="media-body">
+                            <h2 class="mt-0">Alberto Somayya</h2>
+                            <h4 class="mt-0">Executive Chef</h4>
+                            <p class="d-none d-sm-block">
+                                Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
