@@ -38,6 +38,16 @@ body {
 }
 
 /*
+    tab navigation content
+ */
+.tab-content {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+/*
     footer
  */
 .footer {
