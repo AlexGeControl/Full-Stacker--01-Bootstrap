@@ -61,7 +61,7 @@
                         </li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#modal-login">
+                        <a role="button" id="btn-modal-login">
                             <span class="fa fa-sign-in"></span>
                             Login
                         </a>
@@ -250,7 +250,7 @@
                     <div class="col-12 col-sm">
                         <a 
                             class="btn btn-warning btn-sm btn-block" role="button"
-                            data-toggle="modal" data-target="#modal-reserve-table"
+                            id="btn-modal-reserve-table"
                         >
                             Reserve Table
                         </a>
@@ -557,6 +557,9 @@
             
             $(document).ready(
                 function () { 
+                    /*
+                        carousel control
+                     */
                     // general options:
                     $('#carousel-home').carousel(
                         {
@@ -578,6 +581,22 @@
                             };
                         }
                     );
+
+                    /*
+                        modal dialogs control
+                     */
+                    // a. login:
+                    $('#btn-modal-login').click(
+                        function () {
+                            $('#modal-login').modal('show');
+                        }
+                    )
+                    // b. reserve table:
+                    $('#btn-modal-reserve-table').click(
+                        function () {
+                            $('#modal-reserve-table').modal('show');
+                        }
+                    )
                 }
             );
         </script>
