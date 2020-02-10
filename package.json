@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Bootstrap 4 Development\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "compile-less": "lessc static/css/styles.less static/css/styles-less.css",
+    "compile-scss": "node-sass -o static/css/ static/css/"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,9 @@
   },
   "homepage": "https://github.com/AlexGeControl/Full-Stacker--01-Bootstrap#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "less": "^3.11.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

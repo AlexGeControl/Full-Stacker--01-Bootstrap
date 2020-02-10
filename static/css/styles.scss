@@ -1,0 +1,114 @@
+// colors:
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+// dimensions:
+$carousel-item-height: 300px;
+
+/*
+    mixins:
+ */
+@mixin zero-margin($padding-up-down, $padding-left-right) {
+    margin: 0px auto;
+    padding: $padding-up-down $padding-left-right;
+}
+
+/*
+    document styles:
+ */
+
+ // body:
+ body {
+    padding: 50px 0px 0px 0px;
+ }
+
+ // navbar:
+ .navbar-dark {
+    background-color: $background-dark;
+ }
+ 
+ // jumbotron:
+ .jumbotron {
+    @include zero-margin(70px, 30px);
+    background: $background-light;
+    color:floralwhite;
+ }
+ 
+ // tab navigation:
+ .tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+ }
+ 
+ // carousel:
+ .carousel {
+     background: $background-dark;
+     .carousel-item {
+         height: $carousel-item-height;
+         img {
+             position: absolute;
+             top: 0;
+             left: 0;
+             min-height: $carousel-item-height;
+         }
+     }
+ }
+
+ #btn-carousel-cycle {
+     position: absolute;
+     right: 0px;
+     bottom: 0px;
+     z-index: 1;
+ }
+
+ // modal dialog:
+ .modal {
+    .modal-dialog {
+      .modal-content {
+         .modal-header {
+            color: floralwhite;
+            background-color: $background-dark;
+            button {
+               color: floralwhite;
+            }
+         }
+         .modal-body {
+            background-color: $background-pale;
+            button {
+               color: floralwhite;
+            }
+         }
+      }
+    }
+ }
+
+ // row:
+ .row-header {
+    @include zero-margin(0px, 0px);
+ }
+
+ .row-content {
+    @include zero-margin(50px, 0px);
+
+    border-bottom: 1px ridge;
+    min-height: 40px;
+ }
+
+ // footer:
+ .footer {
+   @include zero-margin(20px, 0px);
+
+    background-color: $background-pale;
+ }
+
+ address {
+    margin: 0px auto;
+
+    font-size: 80%;
+
+    color:#0f0f0f;
+}
