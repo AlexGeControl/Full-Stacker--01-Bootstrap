@@ -23,7 +23,7 @@ body {
 }
 
 /*
-    contents in body
+    carousel
  */
 .carousel {
     background:#512DA8;
@@ -40,6 +40,16 @@ body {
     min-height: 300px;
 }
 
+#btn-carousel-cycle {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+/*
+    contents in body
+ */
 .row-header {
     margin: 0px auto;
     padding: 0px;
